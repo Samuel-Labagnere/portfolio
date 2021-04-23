@@ -1,0 +1,30 @@
+#page{
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+}
+#text-aside{
+    display: flex;
+    flex-direction: column;
+    /* height: 100vh; */
+    /* transform: rotate(-90deg); */
+    position: absolute;
+    /* align-content: space-around; */
+    margin-left: 5vw;
+    margin-top: 15vh;
+}
+#text-aside p{
+    /* margin-right: 50px; */
+    margin-top: 20vh;
+    transform-origin: left;
+    transform: rotate(-90deg);
+}
+#box-left{
+    display: flex;
+    flex-direction: column;
+}
+#box{
+    display: flex;
+    margin-top: auto;
+    margin-top: 10vh;
+}

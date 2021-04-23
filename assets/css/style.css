@@ -54,6 +54,9 @@ a, a:visited{
 .subtitle{
     font-size: 24px;
 }
+.aside{
+    font-size: 72px;
+}
 .underline{
     text-decoration: underline;
 }
