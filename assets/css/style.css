@@ -2,6 +2,63 @@ body{
     background-color: black;
     color: #F2F2EF;
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+
+    overflow-x: hidden;
+}
+header{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+footer{
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+}
+footer div{
+    display: flex;
+    justify-content: center;
+
+    margin: 0 auto;
+
+    /* position: absolute;
+    bottom: 0; */
+}
+footer div *{
+    display: flex;
+    margin-left: 5.5px;
+    margin-right: 5.5px;
+    align-items: center;
+}
+footer div a img{
+    
+}
+header p{
+    margin: 0;
+}
+#logo{
+    max-width: 75px;
+    max-height: 75px;
+}
+a, a:visited{
+    color: #F2F2EF;
+    text-decoration: none;
+    margin: 0;
+}
+
+.title{
+    font-size: 36px;
+}
+.subtitle{
+    font-size: 24px;
+}
+.underline{
+    text-decoration: underline;
+}
+.italic{
+    font-style: italic;
 }
 
 .button{
@@ -12,26 +69,33 @@ body{
     border-radius: 37.5px;
     text-align: center;
     line-height: 75px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 .button p{
-    /* text-align: center; */
+    text-align: center;
     display: inline-block;
     vertical-align: middle;
     font-size: 36px;
+    font-style: italic;
     line-height: normal;
     margin: 0;
 }
-.button-left{
-    position: absolute;
-    /* top: 0; */
-}
-.button-right{
-    position: absolute;
-    /* top: 0; */
+.button:hover{
+    animation: 500ms linear buttonHover;
+    animation-fill-mode: forwards;
 }
 
+@keyframes buttonHover{
+    from {background-color: transparent; color: #F2F2EF;}
+    to {background-color: #F2F2EF; color: black;}
+}
+
+#main{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
 #sam{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    /* transform: translateY(15vh); */
 }
