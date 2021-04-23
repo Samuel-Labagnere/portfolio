@@ -1,4 +1,8 @@
 #page{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
     display: flex;
     width: 100vw;
     justify-content: center;
@@ -25,6 +29,5 @@
 }
 #box{
     display: flex;
-    margin-top: auto;
-    margin-top: 10vh;
+    align-self: center;
 }
