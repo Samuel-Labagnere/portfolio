@@ -9,19 +9,19 @@
 }
 #text-aside{
     display: flex;
-    flex-direction: column;
-    /* height: 100vh; */
-    /* transform: rotate(-90deg); */
+    /* flex-direction: column; */
     position: absolute;
-    /* align-content: space-around; */
-    margin-left: 5vw;
-    margin-top: 15vh;
+    top: 650px;
+    left: 0;
+    transform-origin: top left;
+    transform: rotate(-90deg);
+    /* margin-left: 5vw;
+    margin-top: 15vh; */
 }
 #text-aside p{
-    /* margin-right: 50px; */
-    margin-top: 20vh;
-    transform-origin: left;
-    transform: rotate(-90deg);
+    margin-right: 50px;
+    /* transform-origin: left;
+    transform: rotate(-90deg); */
 }
 #box-left{
     display: flex;
