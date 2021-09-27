@@ -30,3 +30,7 @@ h2{
     padding-top: 35px;
 }
 
+.left{
+    position: relative;
+    left: 50px;
+}
