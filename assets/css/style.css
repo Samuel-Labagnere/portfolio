@@ -1,7 +1,8 @@
 body{
     background-color: black;
     color: #F2F2EF;
-    font-family: Arial, Helvetica, sans-serif;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    font-family: Roboto;
     font-size: 18px;
 
     overflow-x: hidden;
@@ -31,9 +32,6 @@ footer div *{
     margin-left: 5.5px;
     margin-right: 5.5px;
     align-items: center;
-}
-footer div a img{
-    
 }
 header p{
     margin: 0;
@@ -99,6 +97,18 @@ a, a:visited{
     justify-content: space-around;
     align-items: center;
 }
-#sam{
-    /* transform: translateY(15vh); */
+
+#text-aside{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* flex-direction: column; */
+    position: absolute;
+    top: 650px;
+    left: -35px;
+    width: 100vh;
+    transform-origin: top left;
+    transform: rotate(-90deg);
+    /* margin-left: 5vw;
+    margin-top: 15vh; */
 }

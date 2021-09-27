@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="/assets/css/style.css" />
-        <!-- <link rel="icon" id="" type="image/png" href="./assets/img/Icon.png" /> -->
-        <link rel="icon" id="darkThemeIcon" type="image/png" href="/assets/img/Icon-dark.png" />
-        <link rel="icon" id="lightThemeIcon" type="image/png" href="/assets/img/Icon-light.png" />
-        <title>Portfolio | Samuel Labagnère</title>
-    </head>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/about.css" />
+    <!-- <link rel="icon" id="" type="image/png" href="./assets/img/Icon.png" /> -->
+    <link rel="icon" id="darkThemeIcon" type="image/png" href="/assets/img/Icon-dark.png" />
+    <link rel="icon" id="lightThemeIcon" type="image/png" href="/assets/img/Icon-light.png" />
+    <title>Portfolio | Samuel Labagnère</title>
+</head>
+
 <body>
     <script>
         lightSchemeIcon = document.querySelector('link#lightThemeIcon');
@@ -20,25 +23,73 @@
         onUpdate();
 
         function onUpdate() {
-        if (matcher.matches) {
-            lightSchemeIcon.remove();
-            document.head.append(darkSchemeIcon);
-        } else {
-            document.head.append(lightSchemeIcon);
-            darkSchemeIcon.remove();
-        }
+            if (matcher.matches) {
+                lightSchemeIcon.remove();
+                document.head.append(darkSchemeIcon);
+            } else {
+                document.head.append(lightSchemeIcon);
+                darkSchemeIcon.remove();
+            }
         }
     </script>
 
     <header>
         <!-- LINKS -->
+        <a href="../index.html">
+            <p class="subtitle italic">↑ <span class="underline">HOME</span> ↑</p>
+        </a>
     </header>
 
+    <div id="text-aside">
+        <p class="aside italic">À</p>
+        <p class="aside italic">PROPOS</p>
+    </div>
 
+    <div id="main">
+        <div class="left">
+            <h1>Samuel<br />LABAGNERE</h1>
+            <h2>Étudiant Multimédia, 19 ans</h2>
+        
+            <p class="about-pres return">Actuellement en formation Métiers du Multimédia et de l’Internet à l’IUT Bordeaux Montaigne.
+        
+                Je suis de nature curieuse et j’apprécie rassembler des savoirs de divers horizons sur une multitude de
+                domaines.
+                Ayant une appétence particulière pour l’informatique et le numérique, je tends malgré tout à élargir mon
+                éventail de compétences.
+            </p>
+        
+            <div class="svg">
+                <img src="../assets/svg/ps.svg" alt="Photoshop" />
+                <img src="../assets/svg/lr.svg" alt="Light Room" />
+                <img src="../assets/svg/pr.svg" alt="Premiere" />
+                <img src="../assets/svg/ae.svg" alt="After Effects" />
+                <img src="../assets/svg/ai.svg" alt="Illustrator" />
+                <img src="../assets/svg/xd.svg" alt="XD" />
+                <img src="../assets/svg/vsc.svg" alt="Visual Studio Code" />
+                <img src="../assets/svg/git.svg" alt="GitHub" />
+                <img src="../assets/svg/figma.svg" alt="Figma" />
+                <img src="../assets/svg/html.svg" alt="HTML" />
+                <img src="../assets/svg/css.svg" alt="CSS" />
+                <img src="../assets/svg/js.svg" alt="Javascript" />
+                <img src="../assets/svg/php.svg" alt="PHP" />
+                <img src="../assets/svg/sql.svg" alt="SQL" />
+                <img src="../assets/svg/cs.svg" alt="C Sharp" />
+                <img src="../assets/svg/unity.svg" alt="Unity" />
+            </div>
+        </div>
+    
+        <div class="right">
+            <img src="../assets/img/Sam.jpg" alt="Photo de Samuel Labagnère" />
+            <a href="https://www.linkedin.com/in/samuel-labagnere/" target="_blank"><img src="../assets/img/LinkedIn.svg" alt="LinkedIn" /></a>
+            <a href="https://www.instagram.com/samuel.labagnere/" target="_blank"><img src="../assets/img/Instagram.svg" alt="Instagram" /></a>
+            <a href="https://github.com/samuel-labagnere/" target="_blank"><img src="../assets/img/Github.svg" alt="Github" /></a>
+        </div>
+    </div>
 
     <footer>
         <!-- LINKS -->
     </footer>
-    
+
 </body>
+
 </html>

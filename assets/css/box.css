@@ -7,17 +7,6 @@
     width: 100vw;
     justify-content: center;
 }
-#text-aside{
-    display: flex;
-    /* flex-direction: column; */
-    position: absolute;
-    top: 650px;
-    left: 0;
-    transform-origin: top left;
-    transform: rotate(-90deg);
-    /* margin-left: 5vw;
-    margin-top: 15vh; */
-}
 #text-aside p{
     margin-right: 50px;
     /* transform-origin: left;
