@@ -25,76 +25,77 @@ img{
     display: block;
 }
 
-.portrait{
+.panel3{
     position: relative;
 }
-.portrait img, .portrait-texte{
+.panel3 img, .panel3-texte{
     position: absolute;
     top: 0px;
     left: 0px;
 }
-.portrait-texte{
+.panel3-texte{
     opacity: 0;
     color: black;
     transition: opacity 1s;
 }
-.portrait-texte p{
+.panel3-texte p{
     margin: 0;
     text-align: center;
-    padding-top: 300px;
+    padding-top: 280px;
     font-size: 36px;
     font-weight: 500;
     font-style: italic;
 }
-.portrait:hover .portrait-texte{
+.panel3:hover .panel3-texte{
     opacity: 1;
 }
-.voyage{
+.panel1{
     position: relative;
 }
-.voyage img, .voyage-texte{
+.panel1 img, .panel1-texte{
     position: absolute;
     top: 0px;
     left: 0px;
 }
-.voyage-texte{
+.panel1-texte{
     opacity: 0;
     color: black;
     transition: opacity 1s;
 }
-.voyage-texte p{
+.panel1-texte p{
     margin: 0;
     text-align: center;
-    padding-top: 147px;
+    padding-top: 130px;
     font-size: 36px;
     font-weight: 500;
     font-style: italic;
 }
-.voyage:hover .voyage-texte{
+.panel1:hover .panel1-texte{
     opacity: 1;
 }
-.mode{
+.panel2{
     position: relative;
 }
-.mode img, .mode-texte{
+.panel2 img, .panel2-texte{
     position: absolute;
     top: 0px;
     left: 0px;
 }
-.mode-texte{
+.panel2-texte{
     opacity: 0;
     color: black;
     transition: opacity 1s;
 }
-.mode-texte p{
+.panel2-texte p{
     margin: 0;
     text-align: center;
-    padding-top: 147px;
+    padding-top: 130px;
+    vertical-align: middle;
     font-size: 36px;
     font-weight: 500;
     font-style: italic;
 }
-.mode:hover .mode-texte{
+.panel2:hover .panel2-texte{
     opacity: 1;
 }
 .vlogs{
