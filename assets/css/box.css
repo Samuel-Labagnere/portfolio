@@ -25,10 +25,6 @@ img{
     display: block;
 }
 
-.voyage :hover{
-    /* animation: 500ms linear fadein;
-    animation-fill-mode: forwards; */
-}
 .portrait{
     position: relative;
 }
@@ -44,15 +40,62 @@ img{
 }
 .portrait-texte p{
     margin: 0;
+    text-align: center;
+    padding-top: 300px;
+    font-size: 36px;
+    font-weight: 500;
+    font-style: italic;
 }
 .portrait:hover .portrait-texte{
     opacity: 1;
 }
-.portrait-texte p{
+.voyage{
+    position: relative;
+}
+.voyage img, .voyage-texte{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+.voyage-texte{
+    opacity: 0;
+    color: black;
+    transition: opacity 1s;
+}
+.voyage-texte p{
+    margin: 0;
     text-align: center;
+    padding-top: 147px;
+    font-size: 36px;
+    font-weight: 500;
+    font-style: italic;
+}
+.voyage:hover .voyage-texte{
+    opacity: 1;
 }
 .mode{
-
+    position: relative;
+}
+.mode img, .mode-texte{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+.mode-texte{
+    opacity: 0;
+    color: black;
+    transition: opacity 1s;
+}
+.mode-texte p{
+    margin: 0;
+    text-align: center;
+    padding-top: 147px;
+    font-size: 36px;
+    font-weight: 500;
+    font-style: italic;
+}
+.mode:hover .mode-texte{
+    opacity: 1;
 }
 .vlogs{
 
