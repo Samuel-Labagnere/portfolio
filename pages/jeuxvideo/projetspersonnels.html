@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../../assets/css/style.css" />
+        <!-- <link rel="icon" id="" type="image/png" href="./assets/img/Icon.png" /> -->
+        <link rel="icon" id="darkThemeIcon" type="image/png" href="/assets/img/Icon-dark.png" />
+        <link rel="icon" id="lightThemeIcon" type="image/png" href="/assets/img/Icon-light.png" />
+        <title>Portfolio | Samuel Labagnère</title>
+    </head>
+<body>
+    <script>
+        lightSchemeIcon = document.querySelector('link#lightThemeIcon');
+        darkSchemeIcon = document.querySelector('link#darkThemeIcon');
+
+        matcher = window.matchMedia('(prefers-color-scheme: dark)');
+        matcher.addListener(onUpdate);
+        onUpdate();
+
+        function onUpdate() {
+        if (matcher.matches) {
+            lightSchemeIcon.remove();
+            document.head.append(darkSchemeIcon);
+        } else {
+            document.head.append(lightSchemeIcon);
+            darkSchemeIcon.remove();
+        }
+        }
+    </script>
+
+    <header id="header" style="display: flex; flex-direction: row; justify-content: space-evenly;">
+        <a href="../../index.html">
+            <p class="subtitle italic">↑ <span class="underline">HOME</span> ↑</p>
+        </a>
+        <a href="../jeuxvideo.html">
+            <p class="subtitle italic">↑ <span class="underline">JEUX VIDÉO</span> ↑</p>
+        </a>
+    </header>
+
+    <div id="text-aside">
+        <p class="aside italic">JEUX</p>
+        <p class="aside italic">VIDÉO</p>
+    </div>
+    <div id="page">
+        <div id="page-container">
+            <a href="#header">
+                <div id="arrow-up">
+                    <p class="arrow">↑</p>
+                </div>
+            </a>
+            <div id="page-content">
+                <div id="content">
+                    <img src="../../assets/img/jeux/projetspersonnels/projetspersonnels1.jpg" alt="" 
+                    style="width:886px; height:540px; border:2px solid #F2F2EF;" />
+                    <img src="../../assets/img/jeux/projetspersonnels/projetspersonnels2.jpg" alt="" 
+                    style="width:886px; height:540px; border:2px solid #F2F2EF;" />
+                    <img src="../../assets/img/jeux/projetspersonnels/projetspersonnels3.jpg" alt="" 
+                    style="width:886px; height:540px; border:2px solid #F2F2EF;" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <!-- LINKS -->
+    </footer>
+    
+</body>
+</html>
