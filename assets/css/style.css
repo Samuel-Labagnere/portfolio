@@ -112,3 +112,41 @@ a, a:visited{
     /* margin-left: 5vw;
     margin-top: 15vh; */
 }
+
+#page-container{
+    display: flex;
+    flex-direction: row;
+    width: 75w;
+    justify-content: center;
+    align-items: baseline;
+}
+#arrow-up{
+    position: fixed;
+    margin: 0;
+    margin-top: 35vh;
+    right: 80vw;
+    top:0;
+    height: 100px;
+    width: 100px;
+    font-size: 64px;
+    text-align: center;
+    border: 1px solid white;
+    border-radius: 180px;
+    cursor: pointer;
+}
+#arrow-up p{
+    margin-top: 5px;
+}
+#page-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+#content{
+    display: flex;
+    flex-direction: column;
+}
+#content img{
+    margin-top: 25px;
+    cursor: pointer;
+}
