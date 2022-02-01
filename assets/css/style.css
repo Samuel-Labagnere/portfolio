@@ -221,3 +221,9 @@ a, a:visited{
     width: 175px;
     height: 100px;
 }
+.modal-link.unavailable{
+    width: 275px;
+    color: gray;
+    font-weight: lighter;
+    cursor: default;
+}
