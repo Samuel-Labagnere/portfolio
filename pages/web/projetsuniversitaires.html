@@ -8,9 +8,10 @@
         <!-- <link rel="icon" id="" type="image/png" href="./assets/img/Icon.png" /> -->
         <link rel="icon" id="darkThemeIcon" type="image/png" href="/assets/img/Icon-dark.png" />
         <link rel="icon" id="lightThemeIcon" type="image/png" href="/assets/img/Icon-light.png" />
+        <script type="text/javascript" src="../../assets/js/modal.js"></script>
         <title>Portfolio | Samuel Labagnère</title>
     </head>
-<body>
+<body onload="init();">
     <script>
         lightSchemeIcon = document.querySelector('link#lightThemeIcon');
         darkSchemeIcon = document.querySelector('link#darkThemeIcon');
@@ -52,16 +53,165 @@
             </a>
             <div id="page-content">
                 <div id="content">
-                    <img src="../../assets/img/web/projetsuniversitaires/projetsuniversitaires1.jpg" alt="" 
+                    <img id="img1" src="../../assets/img/web/projetsuniversitaires/projetsuniversitaires1.jpg" alt="" 
                     style="width:965px; height:540px; border:2px solid #F2F2EF;" />
-                    <img src="../../assets/img/web/projetsuniversitaires/projetsuniversitaires2.jpg" alt="" 
+                    <img id="img2" src="../../assets/img/web/projetsuniversitaires/projetsuniversitaires2.jpg" alt="" 
                     style="width:965px; height:540px; border:2px solid #F2F2EF;" />
-                    <img src="../../assets/img/web/projetsuniversitaires/projetsuniversitaires3.jpg" alt="" 
+                    <img id="img3" src="../../assets/img/web/projetsuniversitaires/projetsuniversitaires3.jpg" alt="" 
                     style="width:965px; height:540px; border:2px solid #F2F2EF;" />
-                    <img src="../../assets/img/web/projetsuniversitaires/projetsuniversitaires4.jpg" alt="" 
+                    <img id="img4" src="../../assets/img/web/projetsuniversitaires/projetsuniversitaires4.jpg" alt="" 
                     style="width:965px; height:540px; border:2px solid #F2F2EF;" />
-                    <img src="../../assets/img/web/projetsuniversitaires/projetsuniversitaires5.jpg" alt="" 
+                    <img id="img5" src="../../assets/img/web/projetsuniversitaires/projetsuniversitaires5.jpg" alt="" 
                     style="width:965px; height:540px; border:2px solid #F2F2EF;" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-container" style="display: none;">        
+        <div class="modal" id="modal1">
+            <div class="modal-closer-container">
+                <div class="modal-closer" id="modal1-closer">
+                    <p>X</p>
+                </div>
+            </div>
+            <div class="modal-content">
+                <img src="../../assets/img/web/projetsuniversitaires/projetsuniversitaires1.jpg" alt=""
+                style="width: 70%; border: 2px solid black;" />
+                <div class="modal-text">
+                    <p class="title">PROJETS UNIVERSITAIRES</p>
+                    <p class="subtitle">Cinéma: Le Festival</p>
+                    <p class="modal-description description-part-one">
+                        Refonte graphique du site web du Cinéma « Le Festival » de Bègles.
+                    </p>
+                    <p class="modal-description description-part-two">
+                        Ce projet fut entrepris par l’équipe Mangrela durant le projet DESIGN INTERACTIF du cursus MMI à l’IUT Bordeaux Montaigne.
+                    </p>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <div class="modal-information">
+                    <p class="italic">Langages: HTML, CSS, JS</p>
+                </div>
+                <div class="modal-link">
+                    <a href="https://cinema-lefestival.netlify.app/"><p class="title italic">OUVRIR</p></a>
+                </div>
+            </div>
+        </div>
+        <div class="modal" id="modal2">
+            <div class="modal-closer-container">
+                <div class="modal-closer" id="modal2-closer">
+                    <p>X</p>
+                </div>
+            </div>
+            <div class="modal-content">
+                <img src="../../assets/img/web/projetsuniversitaires/projetsuniversitaires2.jpg" alt=""
+                style="width: 70%; border: 2px solid black;" />
+                <div class="modal-text">
+                    <p class="title">PROJETS UNIVERSITAIRES</p>
+                    <p class="subtitle">#DÉFISCOVID</p>
+                    <p class="modal-description description-part-one">
+                        Création de l’application web DEFISCOVID, proposant 14 défis journaliers pour aider à passer le temps durant un résultat positif au Covid-19.
+                    </p>
+                    <p class="modal-description description-part-two">
+                        Projet réalisé par l’équipe CASNEV durant la semaine MAIN DANS LA MAIN du cursus MMI à l’IUT Bordeaux Montaigne.
+                    </p>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <div class="modal-information">
+                    <p class="italic">Langages: HTML, CSS, JS</p>
+                </div>
+                <div class="modal-link">
+                    <a href="https://defiscovid.netlify.app/"><p class="title italic">OUVRIR</p></a>
+                </div>
+            </div>
+        </div>
+        <div class="modal" id="modal3">
+            <div class="modal-closer-container">
+                <div class="modal-closer" id="modal3-closer">
+                    <p>X</p>
+                </div>
+            </div>
+            <div class="modal-content">
+                <img src="../../assets/img/web/projetsuniversitaires/projetsuniversitaires3.jpg" alt=""
+                style="width: 70%; border: 2px solid black;" />
+                <div class="modal-text">
+                    <p class="title">PROJETS UNIVERSITAIRES</p>
+                    <p class="subtitle">Eclatech</p>
+                    <p class="modal-description description-part-one">
+                        Création d’un blog autour de Bordeaux et ses startups dans la FrenchTech.
+                    </p>
+                    <p class="modal-description description-part-two">
+                        Créé et codé par Buenorizon durant le projet BLOGART du cursus MMI à l’IUT Bordeaux Montaigne.
+                    </p>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <div class="modal-information">
+                    <p class="italic">Langages: HTML, SCSS, JS, PHP, SQL (PDO)</p>
+                </div>
+                <div class="modal-link">
+                    <a href="http://plateforme-mmi.iut.u-bordeaux-montaigne.fr/user03"><p class="title italic">OUVRIR</p></a>
+                </div>
+            </div>
+        </div>
+        <div class="modal" id="modal4">
+            <div class="modal-closer-container">
+                <div class="modal-closer" id="modal4-closer">
+                    <p>X</p>
+                </div>
+            </div>
+            <div class="modal-content">
+                <img src="../../assets/img/web/projetsuniversitaires/projetsuniversitaires4.jpg" alt=""
+                style="width: 70%; border: 2px solid black;" />
+                <div class="modal-text">
+                    <p class="title">PROJETS UNIVERSITAIRES</p>
+                    <p class="subtitle">Culture Campus</p>
+                    <p class="modal-description description-part-one">
+                        Création d’un site de vente en ligne pour l’Université Bordeaux Montaigne.
+                    </p>
+                    <p class="modal-description description-part-two">
+                        Créé et développé par une équipe d’étudiants en DUT MMI à l’IUT Bordeaux Montaigne.
+                    </p>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <div class="modal-information">
+                    <p class="italic">Framework: RubyOnRails</p>
+                </div>
+                <div class="modal-link">
+                    <a href="https://culturecampus.fr/"><p class="title italic">OUVRIR</p></a>
+                </div>
+            </div>
+        </div>
+        <div class="modal" id="modal5">
+            <div class="modal-closer-container">
+                <div class="modal-closer" id="modal5-closer">
+                    <p>X</p>
+                </div>
+            </div>
+            <div class="modal-content">
+                <img src="../../assets/img/web/projetsuniversitaires/projetsuniversitaires5.jpg" alt=""
+                style="width: 70%; border: 2px solid black;" />
+                <div class="modal-text">
+                    <p class="title">PROJETS UNIVERSITAIRES</p>
+                    <p class="subtitle">Morpionline</p>
+                    <p class="modal-description description-part-one">
+                        Développement d’une application web pour jouer au Morpion sous React.js.
+                    </p>
+                    <p class="modal-description description-part-two">
+                        Créé et développé par un binôme d’étudiants en DUT MMI à l’IUT Bordeaux Montaigne.
+                    </p>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <div class="modal-information">
+                    <p class="italic">Langages: HTML, CSS, JS</p>
+                    <p class="italic">Librairie: React.js</p>
+                </div>
+                <div class="modal-link">
+                    <a href="https://morpionline.netlify.app/"><p class="title italic">OUVRIR</p></a>
                 </div>
             </div>
         </div>

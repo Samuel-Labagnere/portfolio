@@ -8,9 +8,10 @@
         <!-- <link rel="icon" id="" type="image/png" href="./assets/img/Icon.png" /> -->
         <link rel="icon" id="darkThemeIcon" type="image/png" href="/assets/img/Icon-dark.png" />
         <link rel="icon" id="lightThemeIcon" type="image/png" href="/assets/img/Icon-light.png" />
+        <script type="text/javascript" src="../../assets/js/modal.js"></script>
         <title>Portfolio | Samuel Labagnère</title>
     </head>
-<body>
+<body onload="init();">
     <script>
         lightSchemeIcon = document.querySelector('link#lightThemeIcon');
         darkSchemeIcon = document.querySelector('link#darkThemeIcon');
@@ -52,8 +53,40 @@
             </a>
             <div id="page-content">
                 <div id="content">
-                    <img src="../../assets/img/web/projetspersonnels/projetspersonnels1.jpg" alt="" 
+                    <img id="img1" src="../../assets/img/web/projetspersonnels/projetspersonnels1.jpg" alt="" 
                     style="width:965px; height:540px; border:2px solid #F2F2EF;" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-container" style="display: none;">        
+        <div class="modal" id="modal1">
+            <div class="modal-closer-container">
+                <div class="modal-closer" id="modal1-closer">
+                    <p>X</p>
+                </div>
+            </div>
+            <div class="modal-content">
+                <img src="../../assets/img/web/projetspersonnels/projetspersonnels1.jpg" alt=""
+                style="width: 70%; border: 2px solid black;" />
+                <div class="modal-text">
+                    <p class="title">PROJETS PERSONNELS</p>
+                    <p class="subtitle">SL. - Portfolio</p>
+                    <p class="modal-description description-part-one">
+                        Portfolio en ligne designé et codé par moi-même.
+                    </p>
+                    <p class="modal-description description-part-two">
+                        Ce projet a vu le jour de ma propre initiative, mais s’est vu retravaillé durant mon cursus MMI.
+                    </p>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <div class="modal-information">
+                    <p class="italic">Langages: HTML, CSS, JS</p>
+                </div>
+                <div class="modal-link">
+                    <a href="https://samuel-labagnere.netlify.app"><p class="title italic">OUVRIR</p></a>
                 </div>
             </div>
         </div>
