@@ -1,3 +1,8 @@
+:root{
+    --font-weight: 600;
+    --font-size: 36px;
+}
+
 #page{
     position: absolute;
     top: 50%;
@@ -6,11 +11,6 @@
     display: flex;
     width: 100vw;
     justify-content: center;
-}
-#text-aside p{
-    margin-right: 50px;
-    /* transform-origin: left;
-    transform: rotate(-90deg); */
 }
 #box-left{
     display: flex;
@@ -42,8 +42,8 @@ img{
     margin: 0;
     text-align: center;
     padding-top: 280px;
-    font-size: 36px;
-    font-weight: 500;
+    font-size: var(--font-size);
+    font-weight: var(--font-weight);
     font-style: italic;
 }
 .panel3:hover .panel3-texte{
@@ -66,8 +66,8 @@ img{
     margin: 0;
     text-align: center;
     padding-top: 130px;
-    font-size: 36px;
-    font-weight: 500;
+    font-size: var(--font-size);
+    font-weight: var(--font-weight);
     font-style: italic;
 }
 .panel1:hover .panel1-texte{
@@ -91,8 +91,8 @@ img{
     text-align: center;
     padding-top: 130px;
     vertical-align: middle;
-    font-size: 36px;
-    font-weight: 500;
+    font-size: var(--font-size);
+    font-weight: var(--font-weight);
     font-style: italic;
 }
 .panel2:hover .panel2-texte{

@@ -101,17 +101,15 @@ a, a:visited{
 
 #text-aside{
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    /* flex-direction: column; */
-    position: absolute;
-    top: 650px;
-    left: -35px;
+    align-items: baseline;
+    position: fixed;
+    bottom: -15vh;
     width: 100vh;
     transform-origin: top left;
     transform: rotate(-90deg);
-    /* margin-left: 5vw;
-    margin-top: 15vh; */
+}
+#text-aside p{
+    margin-right: 50px;
 }
 
 #page-container{
