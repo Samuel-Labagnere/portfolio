@@ -1,27 +1,74 @@
 function init(){
     let modalContainer = document.getElementById("modal-container");
+    
+    if(document.getElementById("img1")){
+        let img1, modal1, modalCloser1;
 
-    let modalCloser = document.getElementById("modal1-closer");
-    let modalToClose;
+        img1 = document.getElementById("img1");
+        modal1 = document.getElementById("modal1");
+        modalCloser1 = document.getElementById("modal1-closer");
+        img1.onclick = function(){
+            modalContainer.setAttribute("style", "display: flex;");
+            modal1.setAttribute("style", "display: block;");
+            disableScroll();
+        };
+        modalCloser1.onclick = function(){
+            modal1.setAttribute("style", "display: none;");
+            modalContainer.setAttribute("style", "display: none;");
+            enableScroll();
+        };
+    }
+    if(document.getElementById("img2")){
+        let img2, modal2, modalCloser2;
 
-    let img1 = document.getElementById("img1");
-    let modal1 = document.getElementById("modal1");
+        img2 = document.getElementById("img2");
+        modal2 = document.getElementById("modal2");
+        modalCloser2 = document.getElementById("modal2-closer");
+        img2.onclick = function(){
+            modalContainer.setAttribute("style", "display: flex;");
+            modal2.setAttribute("style", "display: block;");
+            disableScroll();
+        };
+        modalCloser2.onclick = function(){
+            modal2.setAttribute("style", "display: none;");
+            modalContainer.setAttribute("style", "display: none;");
+            enableScroll();
+        };
+    }
+    if(document.getElementById("img3")){
+        let img3, modal3, modalCloser3;
 
-    img1.onclick = function(){
-        modalContainer.setAttribute("style", "display: flex;");
-        modal1.setAttribute("style", "display: block;");
-        modalToClose = document.getElementById("modal1");
-        modalCloser = document.getElementById("modal1-closer");
-        disableScroll();
-        console.log(modalCloser);
-        console.log(modalToClose);
-    };
-    modalCloser.onclick = function(){
-        console.log("ModalCloser clicked !");
-        modalToClose.setAttribute("style", "display: none;");
-        modalContainer.setAttribute("style", "display: none;");
-        enableScroll();
-    };
+        img3 = document.getElementById("img3");
+        modal3 = document.getElementById("modal3");
+        modalCloser3 = document.getElementById("modal3-closer");
+        img3.onclick = function(){
+            modalContainer.setAttribute("style", "display: flex;");
+            modal3.setAttribute("style", "display: block;");
+            disableScroll();
+        };
+        modalCloser3.onclick = function(){
+            modal3.setAttribute("style", "display: none;");
+            modalContainer.setAttribute("style", "display: none;");
+            enableScroll();
+        }
+    }
+    if(document.getElementById("img4")){
+        let img4, modal4, modalCloser4;
+
+        img4 = document.getElementById("img4");
+        modal4 = document.getElementById("modal4");
+        modalCloser4 = document.getElementById("modal4-closer");
+        img4.onclick = function(){
+            modalContainer.setAttribute("style", "display: flex;");
+            modal4.setAttribute("style", "display: block;");
+            disableScroll();
+        };
+        modalCloser4.onclick = function(){
+            modal4.setAttribute("style", "display: none;");
+            modalContainer.setAttribute("style", "display: none;");
+            enableScroll();
+        }
+    }
 }
 
 function preventDefault(e) {
