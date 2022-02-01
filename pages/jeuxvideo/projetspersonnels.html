@@ -8,9 +8,10 @@
         <!-- <link rel="icon" id="" type="image/png" href="./assets/img/Icon.png" /> -->
         <link rel="icon" id="darkThemeIcon" type="image/png" href="/assets/img/Icon-dark.png" />
         <link rel="icon" id="lightThemeIcon" type="image/png" href="/assets/img/Icon-light.png" />
+        <script type="text/javascript" src="../../assets/js/modal.js"></script>
         <title>Portfolio | Samuel Labagnère</title>
     </head>
-<body>
+<body onload="init();">
     <script>
         lightSchemeIcon = document.querySelector('link#lightThemeIcon');
         darkSchemeIcon = document.querySelector('link#darkThemeIcon');
@@ -52,12 +53,99 @@
             </a>
             <div id="page-content">
                 <div id="content">
-                    <img src="../../assets/img/jeux/projetspersonnels/projetspersonnels1.jpg" alt="" 
+                    <img id="img1" src="../../assets/img/jeux/projetspersonnels/projetspersonnels1.jpg" alt="" 
                     style="width:886px; height:540px; border:2px solid #F2F2EF;" />
-                    <img src="../../assets/img/jeux/projetspersonnels/projetspersonnels2.jpg" alt="" 
+                    <img id="img2" src="../../assets/img/jeux/projetspersonnels/projetspersonnels2.jpg" alt="" 
                     style="width:886px; height:540px; border:2px solid #F2F2EF;" />
-                    <img src="../../assets/img/jeux/projetspersonnels/projetspersonnels3.jpg" alt="" 
+                    <img id="img3" src="../../assets/img/jeux/projetspersonnels/projetspersonnels3.jpg" alt="" 
                     style="width:886px; height:540px; border:2px solid #F2F2EF;" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-container" style="display: none;">        
+        <div class="modal" id="modal1">
+            <div class="modal-closer-container">
+                <div class="modal-closer" id="modal1-closer">
+                    <p>X</p>
+                </div>
+            </div>
+            <div class="modal-content">
+                <img src="../../assets/img/jeux/projetspersonnels/projetspersonnels1.jpg" alt=""
+                style="width: 70%; border: 2px solid black;" />
+                <div class="modal-text">
+                    <p class="title">PROJETS PERSONNELS</p>
+                    <p class="subtitle">Super Soldier</p>
+                    <p class="modal-description description-part-one">
+                        Entraînement à la création d’un jeu de type FPS (First Person Shooter) sous Unity.
+                    </p>
+                    <p class="modal-description description-part-two">
+                        Projet réalisé pour et durant le Coding Club d’Epitech Bordeaux.
+                    </p>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <div class="modal-information">
+                    <p class="italic">Moteur: Unity3D</p>
+                </div>
+                <div>
+                </div>
+            </div>
+        </div>
+        <div class="modal" id="modal2">
+            <div class="modal-closer-container">
+                <div class="modal-closer" id="modal2-closer">
+                    <p>X</p>
+                </div>
+            </div>
+            <div class="modal-content">
+                <img src="../../assets/img/jeux/projetspersonnels/projetspersonnels2.jpg" alt=""
+                style="width: 70%; border: 2px solid black;" />
+                <div class="modal-text">
+                    <p class="title">PROJETS PERSONNELS</p>
+                    <p class="subtitle">BalleFolle!</p>
+                    <p class="modal-description description-part-one">
+                        Entraînement à la maîtrise de la physique sous Unity.
+                    </p>
+                    <p class="modal-description description-part-two">
+                        Projet réalisé pour et durant le Coding Club d’Epitech Bordeaux.
+                    </p>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <div class="modal-information">
+                    <p class="italic">Moteur: Unity3D</p>
+                </div>
+                <div>
+                </div>
+            </div>
+        </div>
+        <div class="modal" id="modal3">
+            <div class="modal-closer-container">
+                <div class="modal-closer" id="modal3-closer">
+                    <p>X</p>
+                </div>
+            </div>
+            <div class="modal-content">
+                <img src="../../assets/img/jeux/projetspersonnels/projetspersonnels3.jpg" alt=""
+                style="width: 70%; border: 2px solid black;" />
+                <div class="modal-text">
+                    <p class="title">PROJETS PERSONNELS</p>
+                    <p class="subtitle">Birds Attack</p>
+                    <p class="modal-description description-part-one">
+                        Entraînement à la maîtrise de la physique sous Unity, ainsi que la création d’un jeu destiné aux plateformes mobiles.
+                    </p>
+                    <p class="modal-description description-part-two">
+                        Projet réalisé pour et durant le Coding Club d’Epitech Bordeaux.
+                    </p>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <div class="modal-information">
+                    <p class="italic">Moteur: Unity3D</p>
+                </div>
+                <div>
                 </div>
             </div>
         </div>

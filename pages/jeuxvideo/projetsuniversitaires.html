@@ -8,9 +8,10 @@
         <!-- <link rel="icon" id="" type="image/png" href="./assets/img/Icon.png" /> -->
         <link rel="icon" id="darkThemeIcon" type="image/png" href="/assets/img/Icon-dark.png" />
         <link rel="icon" id="lightThemeIcon" type="image/png" href="/assets/img/Icon-light.png" />
+        <script type="text/javascript" src="../../assets/js/modal.js"></script>
         <title>Portfolio | Samuel Labagnère</title>
     </head>
-<body>
+<body onload="init();">
     <script>
         lightSchemeIcon = document.querySelector('link#lightThemeIcon');
         darkSchemeIcon = document.querySelector('link#darkThemeIcon');
@@ -52,12 +53,102 @@
             </a>
             <div id="page-content">
                 <div id="content">
-                    <img src="../../assets/img/jeux/projetsuniversitaires/projetsuniversitaires1.jpg" alt="" 
+                    <img id="img1" src="../../assets/img/jeux/projetsuniversitaires/projetsuniversitaires1.jpg" alt="" 
                     style="width:967px; height:540px; border:2px solid #F2F2EF;" />
-                    <img src="../../assets/img/jeux/projetsuniversitaires/projetsuniversitaires2.jpg" alt="" 
+                    <img id="img2" src="../../assets/img/jeux/projetsuniversitaires/projetsuniversitaires2.jpg" alt="" 
                     style="width:967px; height:540px; border:2px solid #F2F2EF;" />
-                    <img src="../../assets/img/jeux/projetsuniversitaires/projetsuniversitaires3.jpg" alt="" 
+                    <img id="img3" src="../../assets/img/jeux/projetsuniversitaires/projetsuniversitaires3.jpg" alt="" 
                     style="width:967px; height:540px; border:2px solid #F2F2EF;" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-container" style="display: none;">        
+        <div class="modal" id="modal1">
+            <div class="modal-closer-container">
+                <div class="modal-closer" id="modal1-closer">
+                    <p>X</p>
+                </div>
+            </div>
+            <div class="modal-content">
+                <img src="../../assets/img/jeux/projetsuniversitaires/projetsuniversitaires1.jpg" alt=""
+                style="width: 70%; border: 2px solid black;" />
+                <div class="modal-text">
+                    <p class="title">PROJETS UNIVERSITAIRES</p>
+                    <p class="subtitle">PONG★</p>
+                    <p class="modal-description description-part-one">
+                        Jeu inspiré de Pong (1972), modernisé et pensé pour répondre à un certain nombre de handicaps.
+                    </p>
+                    <p class="modal-description description-part-two">
+                        Ce projet a vu le jour durant la semaine HANDIPLAY du cursus MMI à l’IUT Bordeaux Montaigne.
+                    </p>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <div class="modal-information">
+                    <p class="italic">Moteur: Unity3D</p>
+                </div>
+                <div class="modal-link">
+                    <a href="https://the-saml.itch.io/pong"><p class="title italic">OUVRIR</p></a>
+                </div>
+            </div>
+        </div>
+        <div class="modal" id="modal2">
+            <div class="modal-closer-container">
+                <div class="modal-closer" id="modal2-closer">
+                    <p>X</p>
+                </div>
+            </div>
+            <div class="modal-content">
+                <img src="../../assets/img/jeux/projetsuniversitaires/projetsuniversitaires2.jpg" alt=""
+                style="width: 70%; border: 2px solid black;" />
+                <div class="modal-text">
+                    <p class="title">PROJETS UNIVERSITAIRES</p>
+                    <p class="subtitle">The Last Call</p>
+                    <p class="modal-description description-part-one">
+                        Jeu narratif d’ambiance en 2D, réalisé par l’EKIProduction.
+                    </p>
+                    <p class="modal-description description-part-two">
+                        Projet né durant la semaine DESIGN DU JEU VIDÉO du cursus MMI à l’IUT Bordeaux Montaigne.
+                    </p>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <div class="modal-information">
+                    <p class="italic">Moteur: Unity3D</p>
+                </div>
+                <div class="modal-link">
+                    <a href="https://vaillantpetit.itch.io/the-last-call"><p class="title italic">OUVRIR</p></a>
+                </div>
+            </div>
+        </div>
+        <div class="modal" id="modal3">
+            <div class="modal-closer-container">
+                <div class="modal-closer" id="modal3-closer">
+                    <p>X</p>
+                </div>
+            </div>
+            <div class="modal-content">
+                <img src="../../assets/img/jeux/projetsuniversitaires/projetsuniversitaires3.jpg" alt=""
+                style="width: 70%; border: 2px solid black;" />
+                <div class="modal-text">
+                    <p class="title">PROJETS UNIVERSITAIRES</p>
+                    <p class="subtitle">GOOH (Get Out Of Here)</p>
+                    <p class="modal-description description-part-one">
+                        Jeu puzzle d’ambiance en 2D, réalisé par l’équipe Holloween.
+                    </p>
+                    <p class="modal-description description-part-two">
+                        Projet né durant la semaine JEUX VIDÉO ET EXPÉRIENCES du cursus MMI à l’IUT Bordeaux Montaigne.
+                    </p>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <div class="modal-information">
+                    <p class="italic">Moteur: Unity3D</p>
+                </div>
+                <div class="modal-link">
+                    <a href="https://the-saml.itch.io/gooh"><p class="title italic">OUVRIR</p></a>
                 </div>
             </div>
         </div>
