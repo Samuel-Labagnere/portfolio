@@ -177,6 +177,9 @@ a, a:visited{
     font-weight: 600;
     display: none;
 }
+.modal img{
+    margin-left: 10px;
+}
 .modal a, .modal a:visited{
     color: black;
 }
