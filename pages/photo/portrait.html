@@ -8,6 +8,7 @@
         <!-- <link rel="icon" id="" type="image/png" href="./assets/img/Icon.png" /> -->
         <link rel="icon" id="darkThemeIcon" type="image/png" href="/assets/img/Icon-dark.png" />
         <link rel="icon" id="lightThemeIcon" type="image/png" href="/assets/img/Icon-light.png" />
+        <script type="text/javascript" src="../../assets/js/modal.js"></script>
         <title>Portfolio | Samuel Labagnère</title>
     </head>
 <body onload="init();">
@@ -52,7 +53,7 @@
             </a>
             <div id="page-content">
                 <div id="content">
-                    <img src="../../assets/img/photo/portrait/portrait1.jpg" alt="" 
+                    <img id="img1" src="../../assets/img/photo/portrait/portrait1.jpg" alt="" 
                     style="width:720px; height:540px; border:2px solid #F2F2EF;" />
                     <img src="../../assets/img/photo/portrait/portrait2.jpg" alt="" 
                     style="width:405px; height:540px; border:2px solid #F2F2EF;" />
@@ -64,6 +65,40 @@
             </div>
         </div>
     </div>
+
+    <div id="modal-container" style="display: none;">        
+        <div class="modal" id="modal1">
+            <div class="modal-closer-container">
+                <div class="modal-closer" id="modal1-closer">
+                    <p>X</p>
+                </div>
+            </div>
+            <div class="modal-content">
+                <img src="../../assets/img/photo/portrait/portrait1.jpg" alt=""
+                style="width: 60%; height: 20%px; border: 2px solid black;" />
+                <div class="modal-text">
+                    <p class="title">PORTRAIT</p>
+                    <p class="subtitle">Bordeaux, IUT Bordeaux Montaigne, Studio</p>
+                    <p class="modal-description description-part-one">
+                        Photographie en paysage de Julian LABALLE, étudiant, lors d'un shooting.
+                    </p>
+                    <p class="modal-description description-part-two">
+                        Cette photo fait partie d'une série de tant d'autres prisent durant le projet PHOTOS du cursus MMI de l'IUT Bordeaux Montaigne.
+                    </p>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <div class="modal-information">
+                    <p class="italic">Appareil: Nikon Coolpix P500</p>
+                    <p class="italic">Photo retouchée avec Adobe Lightroom Classic.</p>
+                </div>
+                <div class="modal-link">
+                    <a href="/assets/img/photo/portrait/portrait1.jpg"><p class="title italic">OUVRIR</p></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <footer>
         <!-- LINKS -->

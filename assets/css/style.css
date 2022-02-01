@@ -149,3 +149,71 @@ a, a:visited{
     margin-top: 25px;
     cursor: pointer;
 }
+
+/* /// MODAL /// */
+
+.modal .title, .modal .subtitle{
+    margin: 0;
+}
+.modal .subtitle{
+    margin-bottom: 50px;
+}
+
+#modal-container{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal{
+    width: 1080px;
+    height: 700px;
+    background-color: #F2F2EF;
+    color: black;
+    font-weight: 600;
+    display: none;
+}
+.modal a, .modal a:visited{
+    color: black;
+}
+.modal-closer-container{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+.modal-closer{
+    border: 2px solid black;
+    border-radius: 180px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    margin: 10px;
+    cursor: pointer;
+}
+.modal-content{
+    display: flex;
+    flex-direction: row;
+}
+.modal-text, .modal-footer{
+    margin: 10px;
+}
+.modal-footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.modal-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 180px;
+    width: 175px;
+}
