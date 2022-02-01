@@ -8,9 +8,10 @@
         <!-- <link rel="icon" id="" type="image/png" href="./assets/img/Icon.png" /> -->
         <link rel="icon" id="darkThemeIcon" type="image/png" href="/assets/img/Icon-dark.png" />
         <link rel="icon" id="lightThemeIcon" type="image/png" href="/assets/img/Icon-light.png" />
+        <script type="text/javascript" src="../../assets/js/modal.js"></script>
         <title>Portfolio | Samuel Labagnère</title>
     </head>
-<body>
+<body onload="init();">
     <script>
         lightSchemeIcon = document.querySelector('link#lightThemeIcon');
         darkSchemeIcon = document.querySelector('link#darkThemeIcon');
@@ -52,12 +53,108 @@
             </a>
             <div id="page-content">
                 <div id="content">
-                    <img src="../../assets/img/video/metrages/metrages1.jpg" alt="" 
+                    <img id="img1" src="../../assets/img/video/metrages/metrages1.jpg" alt="" 
                     style="width:958px; height:540px; border:2px solid #F2F2EF;" />
-                    <img src="../../assets/img/video/metrages/metrages2.jpg" alt="" 
+                    <img id="img2" src="../../assets/img/video/metrages/metrages2.jpg" alt="" 
                     style="width:405px; height:540px; border:2px solid #F2F2EF;" />
-                    <img src="../../assets/img/video/metrages/metrages3.jpg" alt="" 
+                    <img id="img3" src="../../assets/img/video/metrages/metrages3.jpg" alt="" 
                     style="width:958px; height:540px; border:2px solid #F2F2EF;" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-container" style="display: none;">        
+        <div class="modal" id="modal1">
+            <div class="modal-closer-container">
+                <div class="modal-closer" id="modal1-closer">
+                    <p>X</p>
+                </div>
+            </div>
+            <div class="modal-content">
+                <img src="../../assets/img/video/metrages/metrages1.jpg" alt=""
+                style="width: 60%; border: 2px solid black;" />
+                <div class="modal-text">
+                    <p class="title">MÉTRAGES</p>
+                    <p class="subtitle">Unusual work</p>
+                    <p class="modal-description description-part-one">
+                        Court-Métrage réalisé/monté par Maxime LASSERRE, assisté par ma personne.
+                    </p>
+                    <p class="modal-description description-part-two">
+                        Ce film nous aura servi d’entraînement pour manipuler le Panasonic Lumix DC-G9.
+                    </p>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <div class="modal-information">
+                    <p class="italic">Réalisateur: Maxime LASSERRE</p>
+                    <p class="italic">Monteur: Samuel LABAGNERE</p>
+                    <p class="italic">Acteurs: Samuel LABAGNERE & Maxime LASSERRE</p>
+                </div>
+                <div class="modal-link">
+                    <a href="https://www.youtube.com/watch?v=n2aPTBRbIXk"><p class="title italic">OUVRIR</p></a>
+                </div>
+            </div>
+        </div>
+        <div class="modal" id="modal2">
+            <div class="modal-closer-container">
+                <div class="modal-closer" id="modal2-closer">
+                    <p>X</p>
+                </div>
+            </div>
+            <div class="modal-content">
+                <img src="../../assets/img/video/metrages/metrages2.jpg" alt=""
+                style="width: 30%; border: 2px solid black;" />
+                <div class="modal-text">
+                    <p class="title">MÉTRAGES</p>
+                    <p class="subtitle">HER FRIENDS</p>
+                    <p class="modal-description description-part-one">
+                        Court-Métrage réalisé par moi-même, inspiré du réalisateur Coréen Park Chan Wook.
+                    </p>
+                    <p class="modal-description description-part-two">
+                        Ce court-métrage a été produit durant le projet HORS CHAMPS du cursus MMI à l’IUT Bordeaux Montaigne.
+                    </p>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <div class="modal-information">
+                    <p class="italic">Réalisateur: Samuel LABAGNERE</p>
+                    <p class="italic">Monteur: Samuel LABAGNERE</p>
+                    <p class="italic">Acteurs: Samuel LABAGNERE & Yani MADEBOS</p>
+                    <p class="italic">Equipe tournage: Laurent MALUCELLI, Maxime LASSERRE, Gabriel PAGLIA</p>
+                </div>
+                <div class="modal-link">
+                    <a href="https://drive.google.com/file/d/1ykOMjdyb5paprhjR-8aWaZRHjyVdnr-h/view"><p class="title italic">OUVRIR</p></a>
+                </div>
+            </div>
+        </div>
+        <div class="modal" id="modal3">
+            <div class="modal-closer-container">
+                <div class="modal-closer" id="modal3-closer">
+                    <p>X</p>
+                </div>
+            </div>
+            <div class="modal-content">
+                <img src="../../assets/img/video/metrages/metrages3.jpg" alt=""
+                style="width: 60%; border: 2px solid black;" />
+                <div class="modal-text">
+                    <p class="title">MÉTRAGES</p>
+                    <p class="subtitle">L’Antiquaire</p>
+                    <p class="modal-description description-part-one">
+                        Long-Métrage entièrement réalisé et produit par les étudiants de deuxième année (2021-2022) du DUT MMI à l’IUT Bordeaux Montaigne.
+                    </p>
+                    <p class="modal-description description-part-two">
+                        Produit pour la Journée Internationale de la Langue Maternelle du 21 février 2022 pour introduire en vidéo les sujets qui seront abordés dans la conférence Les Dialogues du 21.
+                    </p>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <div class="modal-information">
+                    <p class="italic">Production des étudiants de 2e Année (2021-2022) DUT MMI Bordeaux Montaigne</p>
+                    <p class="italic">Mes rôles: Co-Réalisateur, chef rédacteur, assistant perchiste, assistant cadreur, monteur, acteur</p>
+                </div>
+                <div class="modal-link">
+                    <a href="https://www.youtube.com/watch?v=bEtPPWjTBk4"><p class="title italic">OUVRIR</p></a>
                 </div>
             </div>
         </div>

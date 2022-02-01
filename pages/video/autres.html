@@ -8,9 +8,10 @@
         <!-- <link rel="icon" id="" type="image/png" href="./assets/img/Icon.png" /> -->
         <link rel="icon" id="darkThemeIcon" type="image/png" href="/assets/img/Icon-dark.png" />
         <link rel="icon" id="lightThemeIcon" type="image/png" href="/assets/img/Icon-light.png" />
+        <script type="text/javascript" src="../../assets/js/modal.js"></script>
         <title>Portfolio | Samuel Labagnère</title>
     </head>
-<body>
+<body onload="init();">
     <script>
         lightSchemeIcon = document.querySelector('link#lightThemeIcon');
         darkSchemeIcon = document.querySelector('link#darkThemeIcon');
@@ -52,8 +53,40 @@
             </a>
             <div id="page-content">
                 <div id="content">
-                    <img src="../../assets/img/video/autres/autres1.jpg" alt="" 
+                    <img id="img1" src="../../assets/img/video/autres/autres1.jpg" alt="" 
                     style="width:960px; height:540px; border:2px solid #F2F2EF;" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-container" style="display: none;">        
+        <div class="modal" id="modal1">
+            <div class="modal-closer-container">
+                <div class="modal-closer" id="modal1-closer">
+                    <p>X</p>
+                </div>
+            </div>
+            <div class="modal-content">
+                <img src="../../assets/img/video/autres/autres1.jpg" alt=""
+                style="width: 60%; border: 2px solid black;" />
+                <div class="modal-text">
+                    <p class="title">AUTRES</p>
+                    <p class="subtitle">CulturalWave, Pilote</p>
+                    <p class="modal-description description-part-one">
+                        Pilote d’émission réalisé par The Graceful Six, une équipe temporaire pour le projet SHOWTIME du cursus MMI à l’IUT Bordeaux Montaigne.
+                    </p>
+                    <p class="modal-description description-part-two">
+                        Cette émission présente un style musical atypique chaque épisode, et le premier débute avec la VaporWave.
+                    </p>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <div class="modal-information">
+                    <p class="italic">Rôles: Rédacteur, Correcteur, Journaliste, Masquotte, Voix off, Cadreur, Monteur</p>
+                </div>
+                <div class="modal-link">
+                    <a href="https://www.youtube.com/watch?v=dbs5NwFFvhc"><p class="title italic">OUVRIR</p></a>
                 </div>
             </div>
         </div>
