@@ -8,9 +8,10 @@
         <!-- <link rel="icon" id="" type="image/png" href="./assets/img/Icon.png" /> -->
         <link rel="icon" id="darkThemeIcon" type="image/png" href="/assets/img/Icon-dark.png" />
         <link rel="icon" id="lightThemeIcon" type="image/png" href="/assets/img/Icon-light.png" />
+        <script type="text/javascript" src="../../assets/js/modal.js"></script>
         <title>Portfolio | Samuel Labagnère</title>
     </head>
-<body>
+<body onload="init();">
     <script>
         lightSchemeIcon = document.querySelector('link#lightThemeIcon');
         darkSchemeIcon = document.querySelector('link#darkThemeIcon');
@@ -52,22 +53,265 @@
             </a>
             <div id="page-content">
                 <div id="content">
-                    <img src="../../assets/img/photo/mode/mode1.jpg" alt="" 
+                    <img id="img1" src="../../assets/img/photo/mode/mode1.jpg" alt="" 
                     style="width:720px; height:540px; border:2px solid #F2F2EF;" />
-                    <img src="../../assets/img/photo/mode/mode2.jpg" alt="" 
+                    <img id="img2" src="../../assets/img/photo/mode/mode2.jpg" alt="" 
                     style="width:720px; height:540px; border:2px solid #F2F2EF;" />
-                    <img src="../../assets/img/photo/mode/mode3.jpg" alt="" 
+                    <img id="img3" src="../../assets/img/photo/mode/mode3.jpg" alt="" 
                     style="width:720px; height:540px; border:2px solid #F2F2EF;" />
-                    <img src="../../assets/img/photo/mode/mode4.jpg" alt="" 
+                    <img id="img4" src="../../assets/img/photo/mode/mode4.jpg" alt="" 
                     style="width:405px; height:540px; border:2px solid #F2F2EF;" />
-                    <img src="../../assets/img/photo/mode/mode5.jpg" alt="" 
+                    <img id="img5" src="../../assets/img/photo/mode/mode5.jpg" alt="" 
                     style="width:405px; height:540px; border:2px solid #F2F2EF;" />
-                    <img src="../../assets/img/photo/mode/mode6.jpg" alt="" 
+                    <img id="img6" src="../../assets/img/photo/mode/mode6.jpg" alt="" 
                     style="width:405px; height:540px; border:2px solid #F2F2EF;" />
-                    <img src="../../assets/img/photo/mode/mode7.jpg" alt="" 
+                    <img id="img7" src="../../assets/img/photo/mode/mode7.jpg" alt="" 
                     style="width:405px; height:540px; border:2px solid #F2F2EF;" />
-                    <img src="../../assets/img/photo/mode/mode8.jpg" alt="" 
+                    <img id="img8" src="../../assets/img/photo/mode/mode8.jpg" alt="" 
                     style="width:405px; height:540px; border:2px solid #F2F2EF;" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-container" style="display: none;">        
+        <div class="modal" id="modal1">
+            <div class="modal-closer-container">
+                <div class="modal-closer" id="modal1-closer">
+                    <p>X</p>
+                </div>
+            </div>
+            <div class="modal-content">
+                <img src="../../assets/img/photo/mode/mode1.jpg" alt=""
+                style="width: 60%; border: 2px solid black;" />
+                <div class="modal-text">
+                    <p class="title">MODE</p>
+                    <p class="subtitle">Bordeaux, Jardin Public</p>
+                    <p class="modal-description description-part-one">
+                        Photographie en paysage de Yani MADEBOS et Maxime LASSERRE, tous deux étudiants, lors d’une séance en plein air.
+                    </p>
+                    <p class="modal-description description-part-two">
+                        Cette photo fait partie d'une série de tant d'autres prisent durant le projet PHOTOS du cursus MMI de l'IUT Bordeaux Montaigne.
+                    </p>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <div class="modal-information">
+                    <p class="italic">Appareil: Nikon Coolpix P500</p>
+                    <p class="italic">Photo retouchée avec Adobe Lightroom Classic.</p>
+                </div>
+                <div class="modal-link">
+                    <a href="/assets/img/photo/mode/mode1.jpg"><p class="title italic">OUVRIR</p></a>
+                </div>
+            </div>
+        </div>
+        <div class="modal" id="modal2">
+            <div class="modal-closer-container">
+                <div class="modal-closer" id="modal2-closer">
+                    <p>X</p>
+                </div>
+            </div>
+            <div class="modal-content">
+                <img src="../../assets/img/photo/mode/mode2.jpg" alt=""
+                style="width: 60%; border: 2px solid black;" />
+                <div class="modal-text">
+                    <p class="title">MODE</p>
+                    <p class="subtitle">Bordeaux, Jardin Public</p>
+                    <p class="modal-description description-part-one">
+                        Photographie en paysage de Emma FOUILLAT, étudiante, lors d’une séance en plein air.
+                    </p>
+                    <p class="modal-description description-part-two">
+                        Cette photo fait partie d'une série de tant d'autres prisent durant le projet PHOTOS du cursus MMI de l'IUT Bordeaux Montaigne.
+                    </p>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <div class="modal-information">
+                    <p class="italic">Appareil: Nikon Coolpix P500</p>
+                    <p class="italic">Photo retouchée avec Adobe Lightroom Classic.</p>
+                </div>
+                <div class="modal-link">
+                    <a href="/assets/img/photo/mode/mode2.jpg"><p class="title italic">OUVRIR</p></a>
+                </div>
+            </div>
+        </div>
+        <div class="modal" id="modal3">
+            <div class="modal-closer-container">
+                <div class="modal-closer" id="modal3-closer">
+                    <p>X</p>
+                </div>
+            </div>
+            <div class="modal-content">
+                <img src="../../assets/img/photo/mode/mode3.jpg" alt=""
+                style="width: 60%; border: 2px solid black;" />
+                <div class="modal-text">
+                    <p class="title">MODE</p>
+                    <p class="subtitle">Bordeaux, Jardin Public</p>
+                    <p class="modal-description description-part-one">
+                        Photographie en paysage de Laurent MALUCELLI, étudiant, lors d’une séance en plein air.
+                    </p>
+                    <p class="modal-description description-part-two">
+                        Cette photo fait partie d'une série de tant d'autres prisent durant le projet PHOTOS du cursus MMI de l'IUT Bordeaux Montaigne.
+                    </p>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <div class="modal-information">
+                    <p class="italic">Appareil: Nikon Coolpix P500</p>
+                    <p class="italic">Photo retouchée avec Adobe Lightroom Classic.</p>
+                </div>
+                <div class="modal-link">
+                    <a href="/assets/img/photo/mode/mode3.jpg"><p class="title italic">OUVRIR</p></a>
+                </div>
+            </div>
+        </div>
+        <div class="modal" id="modal4">
+            <div class="modal-closer-container">
+                <div class="modal-closer" id="modal4-closer">
+                    <p>X</p>
+                </div>
+            </div>
+            <div class="modal-content">
+                <img src="../../assets/img/photo/mode/mode4.jpg" alt=""
+                style="width: 30%; border: 2px solid black;" />
+                <div class="modal-text">
+                    <p class="title">MODE</p>
+                    <p class="subtitle">Bordeaux, Jardin Public</p>
+                    <p class="modal-description description-part-one">
+                        Photographie en portrait de Maxime LASSERRE, étudiant, lors d’une séance en plain air.
+                    </p>
+                    <p class="modal-description description-part-two">
+                        Cette photo fait partie d'une série de tant d'autres prisent durant le projet PHOTOS du cursus MMI de l'IUT Bordeaux Montaigne.
+                    </p>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <div class="modal-information">
+                    <p class="italic">Appareil: Nikon Coolpix P500</p>
+                    <p class="italic">Photo retouchée avec Adobe Lightroom Classic.</p>
+                </div>
+                <div class="modal-link">
+                    <a href="/assets/img/photo/mode/mode4.jpg"><p class="title italic">OUVRIR</p></a>
+                </div>
+            </div>
+        </div>
+        <div class="modal" id="modal5">
+            <div class="modal-closer-container">
+                <div class="modal-closer" id="modal5-closer">
+                    <p>X</p>
+                </div>
+            </div>
+            <div class="modal-content">
+                <img src="../../assets/img/photo/mode/mode5.jpg" alt=""
+                style="width: 30%; border: 2px solid black;" />
+                <div class="modal-text">
+                    <p class="title">MODE</p>
+                    <p class="subtitle">Bordeaux, La MÉCA</p>
+                    <p class="modal-description description-part-one">
+                        Photographie en portrait de Maxime LASSERRE, étudiant.
+                    </p>
+                    <p class="modal-description description-part-two">
+                        Cette photo fait partie d'une série de tant d'autres prisent durant le projet PHOTOS du cursus MMI de l'IUT Bordeaux Montaigne.
+                    </p>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <div class="modal-information">
+                    <p class="italic">Appareil: Panasonic Lumix DC-G9</p>
+                    <p class="italic">Photo retouchée avec Adobe Lightroom Classic.</p>
+                </div>
+                <div class="modal-link">
+                    <a href="/assets/img/photo/mode/mode5.jpg"><p class="title italic">OUVRIR</p></a>
+                </div>
+            </div>
+        </div>
+        <div class="modal" id="modal6">
+            <div class="modal-closer-container">
+                <div class="modal-closer" id="modal6-closer">
+                    <p>X</p>
+                </div>
+            </div>
+            <div class="modal-content">
+                <img src="../../assets/img/photo/mode/mode6.jpg" alt=""
+                style="width: 30%; border: 2px solid black;" />
+                <div class="modal-text">
+                    <p class="title">MODE</p>
+                    <p class="subtitle">Bordeaux, La MÉCA</p>
+                    <p class="modal-description description-part-one">
+                        Photographie en portrait de Maxime LASSERRE, étudiant.
+                    </p>
+                    <p class="modal-description description-part-two">
+                        Cette photo fait partie d'une série de tant d'autres prisent durant le projet PHOTOS du cursus MMI de l'IUT Bordeaux Montaigne.
+                    </p>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <div class="modal-information">
+                    <p class="italic">Appareil: Panasonic Lumix DC-G9</p>
+                    <p class="italic">Photo retouchée avec Adobe Lightroom Classic.</p>
+                </div>
+                <div class="modal-link">
+                    <a href="/assets/img/photo/mode/mode6.jpg"><p class="title italic">OUVRIR</p></a>
+                </div>
+            </div>
+        </div>
+        <div class="modal" id="modal7">
+            <div class="modal-closer-container">
+                <div class="modal-closer" id="modal7-closer">
+                    <p>X</p>
+                </div>
+            </div>
+            <div class="modal-content">
+                <img src="../../assets/img/photo/mode/mode7.jpg" alt=""
+                style="width: 30%; border: 2px solid black;" />
+                <div class="modal-text">
+                    <p class="title">MODE</p>
+                    <p class="subtitle">Bordeaux, Jardin Public</p>
+                    <p class="modal-description description-part-one">
+                        Photographie en portrait de Yani MADEBOS, étudiant.
+                    </p>
+                    <p class="modal-description description-part-two">
+                        Cette photo fait partie d'une série de tant d'autres prisent durant le projet PHOTOS du cursus MMI de l'IUT Bordeaux Montaigne.
+                    </p>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <div class="modal-information">
+                    <p class="italic">Appareil: Panasonic Lumix DC-G9</p>
+                    <p class="italic">Photo retouchée avec Adobe Lightroom Classic.</p>
+                </div>
+                <div class="modal-link">
+                    <a href="/assets/img/photo/mode/mode7.jpg"><p class="title italic">OUVRIR</p></a>
+                </div>
+            </div>
+        </div>
+        <div class="modal" id="modal8">
+            <div class="modal-closer-container">
+                <div class="modal-closer" id="modal8-closer">
+                    <p>X</p>
+                </div>
+            </div>
+            <div class="modal-content">
+                <img src="../../assets/img/photo/mode/mode8.jpg" alt=""
+                style="width: 30%; border: 2px solid black;" />
+                <div class="modal-text">
+                    <p class="title">MODE</p>
+                    <p class="subtitle">Bordeaux, Jardin Public</p>
+                    <p class="modal-description description-part-one">
+                        Photographie en portrait de Yani MADEBOS, étudiant.
+                    </p>
+                    <p class="modal-description description-part-two">
+                        Cette photo fait partie d'une série de tant d'autres prisent durant le projet PHOTOS du cursus MMI de l'IUT Bordeaux Montaigne.
+                    </p>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <div class="modal-information">
+                    <p class="italic">Appareil: Panasonic Lumix DC-G9</p>
+                    <p class="italic">Photo retouchée avec Adobe Lightroom Classic.</p>
+                </div>
+                <div class="modal-link">
+                    <a href="/assets/img/photo/mode/mode8.jpg"><p class="title italic">OUVRIR</p></a>
                 </div>
             </div>
         </div>
