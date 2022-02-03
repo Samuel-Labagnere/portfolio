@@ -158,10 +158,14 @@ img{
         width: 80vw;
     }
     #page{
-        position: absolute;
-        bottom: 0;
-        align-items: center;
+        /* position: absolute; */
+        /* bottom: 0; */
+        position: unset;
+        transform: none;
+        display: flex;
+        align-items: flex-end;
         height: 80vh;
+        /* pointer-events: none; */
     }
     .box-mobile-content{
         position: relative;
