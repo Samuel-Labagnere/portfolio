@@ -260,9 +260,6 @@ a, a:visited{
 }
 
 @media only screen and (max-width: 1525px), only screen and (max-height: 700px) {
-    body{
-        /* background-color: green; */
-    }
     #main{
         justify-content: center;
     }
@@ -299,11 +296,7 @@ a, a:visited{
 
 @media screen and (max-width: 768px){
     body{
-        /* background-color: blue; */
         margin: 0;
-        /* width: 90vw;
-        height: 90vh;
-        overflow: hidden; */
     }
     .button-left, .button-right{
         display: none;
