@@ -144,6 +144,7 @@ img{
     }
     #box-mobile{
         display: block;
+        max-height: 120%;
     }
     #box-mobile p{
         text-align: center;
