@@ -167,7 +167,6 @@ img{
         display: flex;
         align-items: flex-end;
         height: 80vh;
-        /* pointer-events: none; */
     }
     .box-mobile-content{
         position: relative;
@@ -180,6 +179,7 @@ img{
         left: 0;
         width: 100%;
         background-color: rgba(0, 0, 0, 0.75);
+        pointer-events: none;
     }
     .img-title p{
         text-align: left !important;
