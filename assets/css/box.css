@@ -151,6 +151,7 @@ img{
     }
     #box-mobile p.title{
         font-size: 48px;
+        margin-top: 10px;
     }
     #box-mobile a img{
         border: 5px solid #F2F2EF;
@@ -160,7 +161,8 @@ img{
     #page{
         /* position: absolute; */
         /* bottom: 0; */
-        position: unset;
+        position: relative;
+        bottom: 0;
         transform: none;
         display: flex;
         align-items: flex-end;
