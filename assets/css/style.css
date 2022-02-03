@@ -14,6 +14,14 @@ header{
     margin-right: auto;
     text-align: center;
 }
+#header{
+    display: flex; 
+    flex-direction: row; 
+    justify-content: space-evenly;
+}
+#header-mobile{
+    display: none;
+}
 footer{
     position: absolute;
     bottom: 0;
@@ -332,7 +340,21 @@ a, a:visited{
     .button p{
         font-size: 100%;
     }
+    .button.large{
+        width: 150px;
+    }
     footer{
         display: none;
+    }
+    .modal-content img{
+        display: none;
+    }
+    #header{
+        display: none;
+    }
+    #header-mobile{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
     }
 }
