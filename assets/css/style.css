@@ -328,6 +328,9 @@ a, a:visited{
     .modal-content img{
         display: none;
     }
+    .modal-footer{
+        flex-direction: column;
+    }
     #header{
         display: none;
     }
