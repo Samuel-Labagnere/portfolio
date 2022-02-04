@@ -32,9 +32,6 @@ footer div{
     justify-content: center;
 
     margin: 0 auto;
-
-    /* position: absolute;
-    bottom: 0; */
 }
 footer div *{
     display: flex;
@@ -121,17 +118,6 @@ a, a:visited{
 #text-aside p{
     margin-right: 50px;
 }
-/* #text-aside{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    position: fixed;
-    top: 100vh;
-    width: 100vh;
-}
-#text-aside p{
-    margin-right: 50px;
-} */
 #text-aside .text-aside-text{
     display: flex;
     flex-direction: row;
@@ -349,5 +335,25 @@ a, a:visited{
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
+    }
+    #main{
+        width: 100vw;
+    }
+    .left{
+        left: 0 !important;
+        width: 100vw;
+        overflow-wrap: break-word;
+        padding-left: 20px;
+    }
+    .left p{
+        width: 90%;
+        height: 100%;
+    }
+    .right a img{
+        position: relative;
+        left: 31vw;
+        bottom: 50px;
+        width: 50px;
+        margin: 10px;
     }
 }
