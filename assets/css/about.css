@@ -29,6 +29,9 @@ h2{
     height: 192px;
     padding-top: 35px;
 }
+.svg *{
+    width: 50px;
+}
 
 .left{
     position: relative;
