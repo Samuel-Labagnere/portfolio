@@ -360,3 +360,7 @@ a, a:visited{
         margin: 10px;
     }
 }
+
+.uppercase{
+    text-transform: uppercase;
+}
