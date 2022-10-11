@@ -1,3 +1,0 @@
-/*
-  Content-Security-Policy: script-src 'self' *.cloudfront.net; img-src 'self' *.cloudfront.net; style-src 'self' *.cloudfront.net
-  X-Frame-Options: DENY
